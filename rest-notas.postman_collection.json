@@ -1,0 +1,133 @@
+{
+	"variables": [],
+	"info": {
+		"name": "rest-notas",
+		"_postman_id": "47efe08a-4353-ad2b-8e75-e6dcc0ecf3b1",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar",
+			"request": {
+				"url": "http://localhost:8080/rest-notas/rest/notas/listar",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Adicionar",
+			"request": {
+				"url": "http://localhost:8080/rest-notas/rest/notas/adicionar",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json; charset=utf-8",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"titulo\" : \"Título da nota\", \"descricao\" : \"Descrição da nota adicionada\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Nota por ID",
+			"request": {
+				"url": "http://localhost:8080/rest-notas/rest/notas/get/1",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Editar",
+			"request": {
+				"url": "http://localhost:8080/rest-notas/rest/notas/editar",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=utf-8",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"descricao\": \"Nova Descricao\",\n    \"id\": 1,\n    \"titulo\": \"Titulo\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Remover",
+			"request": {
+				"url": "http://localhost:8080/rest-notas/rest/notas/remover",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=utf-8",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n    \"descricao\": \"Nota que será removida\",\n    \"id\": 3,\n    \"titulo\": \"Nota para remover\"\n  }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Editar por ID",
+			"request": {
+				"url": "http://localhost:8080/rest-notas/rest/notas/editar/2",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json;charset=utf-8",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n    \"descricao\": \"Nota a ser editada\",\n    \"titulo\": \"Título da nota\"\n  }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Remover por ID",
+			"request": {
+				"url": "http://localhost:8080/rest-notas/rest/notas/remover/6",
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
