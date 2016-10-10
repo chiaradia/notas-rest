@@ -1,0 +1,6 @@
+{
+  "name": "Notas-rest",
+  "tagline": "Implementação de serviços RESTful para criação de um CRUD básico ",
+  "body": "### O que é um serviço REST?\r\nA Representational State Transfer (REST), em português Transferência de Estado Representacional, é uma abstração da arquitetura da World Wide Web (Web), um estilo arquitetural que consiste de um conjunto coordenado de restrições arquiteturais aplicadas a componentes, conectores e elementos de dados dentro de um sistema de hipermídia distribuído. O REST ignora os detalhes da implementação de componente e a sintaxe de protocolo com o objetivo de focar nos papéis dos componentes, nas restrições sobre sua interação com outros componentes e na sua interpretação de elementos de dados significantes.\r\n\r\n### Sobre o projeto\r\nO projeto consiste na criação de serviços REST para implementar um CRUD básico por meio dos métodos GET, PUT, POST e DELETE. Para realização dos testes, recomenda-se a utilização do aplicativo Postman com o arquivo rest-notas.postman_collection.json\r\n\r\n### Tecnologias utilizadas\r\nPara a criação deste projeto foram utilizadas as tecnologias Java, Maven, Jersey e JDBC.\r\n\r\n### Autores\r\n@chiaradia\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
